@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style/style.css" />
+<head>
+<title>Design of Bridging Oligo</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+</head>
+
+
+<p align="center"><font size="6"> Design of Bridging Oligo </font></p>
+<body >
+
+
+<form >
+  
+
+<section class="container">
+    <section class="col1"><label for="name">Adaptor sequence (5'-3')</label> <textarea class="champ" type="textarea" id="name" name="name" style="top" required onkeyup='this.value=this.value.toUpperCase()' onmousemove='this.value=this.value.toUpperCase()' placeholder="Adaptor" pattern="[[A,T,G,C,\s]{1,}" ></textarea> </section>
+    <section class="col2"><label for="name1">RNA sequence (5'-3')-without Psy site</label> <textarea class="champ" type="textarea" id="name1" name="name1" style="top" required 
+     onmousemove='this.value=this.value.toUpperCase()' onkeyup='this.value=this.value.toUpperCase()' placeholder="RNA" pattern="[A,T,G,C,\s]{1,}" ></textarea></section>
+</section>
+
+<br>
+<br>
+<section class="container"> 
+  <section class="col1"><label class="pourvoir" for="number">Number</label> <input  type="number" id="number" value="10" name="number" style="top"  min="0" max="99" required></section>
+  <section class="col2"><label class="pourvoir" for="number1">Number</label> <input  type="number" id="number1" value="10" name="number1" style="top"  min="0" max="99" required></section>
+</section>
+
+
+
+<section class="container2">	
+
+   <p> <input type="button" value="Enter" class="getValue" > <input type="reset" value="Reset" class="rst">  </p> 
+    
+
+<p style="text-align&#58; center;"> Sequence : <span class="col2" id="prem_part"></span><span class="col1" id="sec_part"></span></p>
+
+
+</form>	
+
+
+<h3 align="center"> Oligo to order </h3>
+
+
+	<input type="text" id="name_oligo" placeholder="Oligo name"> <input type="text" size="50" id="oligo_seq" placeholder="Sequence (5'-3')" readonly=true>  <input type="button" class="add" value="Add">
+
+
+
+    
+
+    <table class="test" id="table2">
+            <tr>
+                <th>Select</th>
+                <th>Name</th>
+                <th>Sequence (5'-3')</th>
+            </tr>
+    
+</table>
+<button type="button" class="delete">Delete</button> <button type="button" class="deleteall">Delete All</button>
+<button type="button" class="exportcsv">Export (.csv)</button>   
+</section>
+
+<section align="center">
+<br>
+
+<br>
+<br>
+<br>
+Optimized for Google Chrome <br>
+
+Please cite: <a target="_blank">Bogard<sup>*</sup>,Tellier<sup>*</sup> et al.,2022 </a><br>
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6800517/" target="_blank">Zhang,W., et al.,2019</a>  
+<br>
+<br>
+
+
+<a href="http://parisepigenetics.com/en/" target="_blank"> <img src="img/logo-EDC_eng.png" alt="" class="support" /></a>
+<a target="_blank" href="https://u-paris.fr/who-am-i/"> <img src="img/LOGOWhoamI.png" alt="" class="support" /></a>
+<a href="https://eur-gene.u-paris.fr/" target="_blank"> <img src="img/logogene.png" alt="" class="support" /></a>
+<a href="https://parisepigenetics.github.io/bibs/" target="_blank"> <img src="img/logo-BIBS_LR.svg.png" alt="" class="support" /></a>
+</section>
+<script src="fct/jquery.js"></script>
+<script src="fct/fonction.js"></script>
+</body>
+</html>
